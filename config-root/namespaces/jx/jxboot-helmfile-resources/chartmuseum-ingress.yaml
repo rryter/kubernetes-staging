@@ -16,8 +16,8 @@ spec:
               serviceName: jenkins-x-chartmuseum
               servicePort: 8080
             path: "/"
-      host: chartmuseum-jx.staging.twy.gmbh
+      host: chartmuseum.staging.twy.gmbh
   tls:
     - hosts:
-        - chartmuseum-jx.staging.twy.gmbh
+        - chartmuseum.staging.twy.gmbh
       secretName: "tls-staging-twy-gmbh-p"

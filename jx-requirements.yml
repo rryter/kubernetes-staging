@@ -29,7 +29,7 @@ spec:
     domain: staging.twy.gmbh
     externalDNS: true
     kind: ingress
-    namespaceSubDomain: "."
+    namespaceSubDomain: .
     tls:
       email: reto@twy.gmbh
       enabled: true

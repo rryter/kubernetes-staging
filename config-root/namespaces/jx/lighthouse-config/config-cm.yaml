@@ -41,7 +41,7 @@ data:
         - needs-rebase
         repos:
         - twygmbh/kubernetes-staging
-      target_url: http://dashboard-jx.staging.twy.gmbh
+      target_url: http://dashboard.staging.twy.gmbh
 kind: ConfigMap
 metadata:
   creationTimestamp: null

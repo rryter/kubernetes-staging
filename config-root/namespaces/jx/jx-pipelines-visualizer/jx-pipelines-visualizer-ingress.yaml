@@ -17,7 +17,7 @@ metadata:
   namespace: jx
 spec:
   rules:
-    - host: dashboard-jx.staging.twy.gmbh
+    - host: dashboard.staging.twy.gmbh
       http:
         paths:
           - backend:
@@ -26,4 +26,4 @@ spec:
   tls:
     - secretName: tls-staging-twy-gmbh-p
       hosts:
-        - dashboard-jx.staging.twy.gmbh
+        - dashboard.staging.twy.gmbh

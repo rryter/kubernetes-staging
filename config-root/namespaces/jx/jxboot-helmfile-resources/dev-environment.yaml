@@ -26,7 +26,7 @@ spec:
       kind: Scheduler
       name: jx-meta-pipeline
     dockerRegistryOrg: ""
-    envOrganisation: todo
+    envOrganisation: twygmbh
     gitServer: https://github.com
     helmTemplate: true
     kubeProvider: "gke"
