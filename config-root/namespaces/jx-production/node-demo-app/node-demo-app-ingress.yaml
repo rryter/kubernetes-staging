@@ -1,0 +1,22 @@
+# Source: node-demo-app/templates/ingress.yaml
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+  name: node-demo-app
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  rules:
+    - http:
+        paths:
+          - backend:
+              serviceName: node-demo-app
+              servicePort: 80
+      host: node-demo-app.staging.twy.gmbh
+  tls:
+    - hosts:
+        - node-demo-app.staging.twy.gmbh
+      secretName: "jx/tls-staging-twy-gmbh-p"
