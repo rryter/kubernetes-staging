@@ -22,8 +22,8 @@ jxRequirements:
     chartRepository: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
     clusterName: twy-staging
     devEnvApprovers:
-    - todo
-    environmentGitOwner: todo
+    - rryter
+    environmentGitOwner: twygmbh
     gitKind: github
     gitName: github
     gitServer: https://github.com
@@ -43,7 +43,7 @@ jxRequirements:
     domain: staging.twy.gmbh
     externalDNS: true
     kind: ingress
-    namespaceSubDomain: -cert-manager.
+    namespaceSubDomain: .
     tls:
       email: reto@twy.gmbh
       enabled: true
