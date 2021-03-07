@@ -8,6 +8,7 @@ data:
     in_repo_config:
       enabled:
         twygmbh/kubernetes-staging: true
+        twygmbh/node-demo-app: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -20,6 +21,7 @@ data:
         skip-unknown-contexts: false
       merge_method:
         twygmbh/kubernetes-staging: merge
+        twygmbh/node-demo-app: merge
       queries:
       - labels:
         - approved
@@ -31,6 +33,7 @@ data:
         - needs-rebase
         repos:
         - twygmbh/kubernetes-staging
+        - twygmbh/node-demo-app
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +44,7 @@ data:
         - needs-rebase
         repos:
         - twygmbh/kubernetes-staging
+        - twygmbh/node-demo-app
       target_url: http://dashboard.staging.twy.gmbh
 kind: ConfigMap
 metadata:
