@@ -1,0 +1,38 @@
+# Source: jx-verify/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2021-02-23T11:13:17Z"
+  deletionTimestamp: null
+  name: 'jx-verify-0.0.70'
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        fix: work better with kapp
+      sha: 478292813de11627433e939c5de5cdffa5fc1007
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        fix: fix selector
+      sha: 81913a523a66bd84c5adee8b4f150d64e5f61a73
+  gitHttpUrl: https://github.com/jenkins-x/jx-verify
+  gitOwner: jenkins-x
+  gitRepository: jx-verify
+  name: 'jx-verify'
+  version: 0.0.70
+status: {}
