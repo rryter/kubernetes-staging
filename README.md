@@ -2,7 +2,7 @@
 
 This git repository installs Jenkins X with Google Secret Manager.
 
-## Creating/upgrading cloud resources
+## Creating / upgrading cloud resources
 
 Modify the `jx-requirements.yml` file
 
