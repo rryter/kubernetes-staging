@@ -18,5 +18,7 @@ releases:
   version: 0.0.1
   name: node-demo-app
   namespace: jx-staging
+  values:
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}
