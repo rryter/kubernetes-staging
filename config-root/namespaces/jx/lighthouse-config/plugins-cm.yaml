@@ -8,6 +8,14 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - twygmbh/kubernetes-production
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - twygmbh/kubernetes-production
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - twygmbh/node-demo-app
       require_self_approval: true
     cat: {}
@@ -24,6 +32,22 @@ data:
       additional_labels: null
     owners: {}
     plugins:
+      twygmbh/kubernetes-production:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       twygmbh/kubernetes-staging:
       - config-updater
       - approve
@@ -68,6 +92,12 @@ data:
     triggers:
     - repos:
       - twygmbh/kubernetes-staging
+      trusted_org: todo
+    - repos:
+      - twygmbh/kubernetes-production
+      trusted_org: todo
+    - repos:
+      - twygmbh/kubernetes-production
       trusted_org: todo
     - repos:
       - twygmbh/node-demo-app

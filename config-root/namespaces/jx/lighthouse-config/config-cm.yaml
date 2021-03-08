@@ -7,6 +7,7 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        twygmbh/kubernetes-production: true
         twygmbh/kubernetes-staging: true
         twygmbh/node-demo-app: true
     plank: {}
@@ -20,6 +21,7 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        twygmbh/kubernetes-production: merge
         twygmbh/kubernetes-staging: merge
         twygmbh/node-demo-app: merge
       queries:
@@ -33,6 +35,7 @@ data:
         - needs-rebase
         repos:
         - twygmbh/kubernetes-staging
+        - twygmbh/kubernetes-production
         - twygmbh/node-demo-app
       - labels:
         - updatebot
@@ -44,6 +47,7 @@ data:
         - needs-rebase
         repos:
         - twygmbh/kubernetes-staging
+        - twygmbh/kubernetes-production
         - twygmbh/node-demo-app
       target_url: http://dashboard.staging.twy.gmbh
 kind: ConfigMap
