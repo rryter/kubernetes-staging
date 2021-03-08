@@ -10,6 +10,7 @@ spec:
     repositories:
     - name: k8s-node-example-app
     - name: kubernetes-production
+    - name: node-demo-app
     scheduler: in-repo
   slack:
     channel: '#jenkins-x-pipelines'

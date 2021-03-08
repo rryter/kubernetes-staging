@@ -10,6 +10,7 @@ data:
         twygmbh/k8s-node-example-app: true
         twygmbh/kubernetes-production: true
         twygmbh/kubernetes-staging: true
+        twygmbh/node-demo-app: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -24,6 +25,7 @@ data:
         twygmbh/k8s-node-example-app: merge
         twygmbh/kubernetes-production: merge
         twygmbh/kubernetes-staging: merge
+        twygmbh/node-demo-app: merge
       queries:
       - labels:
         - approved
@@ -37,6 +39,7 @@ data:
         - twygmbh/kubernetes-staging
         - twygmbh/kubernetes-production
         - twygmbh/k8s-node-example-app
+        - twygmbh/node-demo-app
       - labels:
         - updatebot
         missingLabels:
@@ -49,6 +52,7 @@ data:
         - twygmbh/kubernetes-staging
         - twygmbh/kubernetes-production
         - twygmbh/k8s-node-example-app
+        - twygmbh/node-demo-app
       target_url: http://dashboard.staging.twy.gmbh
 kind: ConfigMap
 metadata:
