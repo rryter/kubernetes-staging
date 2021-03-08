@@ -8,6 +8,7 @@ spec:
     provider: https://github.com
     providerKind: github
     repositories:
+    - name: kubernetes-production
     - name: node-demo-app
     scheduler: in-repo
   slack:
