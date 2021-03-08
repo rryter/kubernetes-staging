@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: twygmbh
+    provider: github
+    repository: k8s-node-example-app
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: twygmbh-k8s-node-example-app
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/twygmbh/k8s-node-example-app.git
+  org: twygmbh
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: k8s-node-example-app
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/twygmbh/k8s-node-example-app

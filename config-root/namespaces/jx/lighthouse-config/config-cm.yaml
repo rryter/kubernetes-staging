@@ -7,6 +7,7 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        twygmbh/k8s-node-example-app: true
         twygmbh/kubernetes-production: true
         twygmbh/kubernetes-staging: true
     plank: {}
@@ -20,6 +21,7 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        twygmbh/k8s-node-example-app: merge
         twygmbh/kubernetes-production: merge
         twygmbh/kubernetes-staging: merge
       queries:
@@ -34,6 +36,7 @@ data:
         repos:
         - twygmbh/kubernetes-staging
         - twygmbh/kubernetes-production
+        - twygmbh/k8s-node-example-app
       - labels:
         - updatebot
         missingLabels:
@@ -45,6 +48,7 @@ data:
         repos:
         - twygmbh/kubernetes-staging
         - twygmbh/kubernetes-production
+        - twygmbh/k8s-node-example-app
       target_url: http://dashboard.staging.twy.gmbh
 kind: ConfigMap
 metadata:
