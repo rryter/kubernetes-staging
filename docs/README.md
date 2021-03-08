@@ -21,16 +21,6 @@
 	      <td><a href='https://github.com/jetstack/cert-manager'>source</a></td>
 	    </tr>
     <tr>
-		      <td colspan='4'><h3>jx-production</h3></td>
-		    </tr>
-	    <tr>
-	      <td><a href='https://github.com/jenkins-x/jx-verify' title='This chart deletes any pods which can&#39;t load their images to work around timing issues with Workload Identity and preview environments
-'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jx-verify </a></td>
-	      <td></td>
-	      <td></td>
-	      <td><a href='https://github.com/jenkins-x/jx-verify'>source</a></td>
-	    </tr>
-    <tr>
 		      <td colspan='4'><h3>jx-staging</h3></td>
 		    </tr>
 	    <tr>
@@ -70,7 +60,7 @@
     <tr>
 	      <td><a href='https://github.com/jenkins-x/jx-pipelines-visualizer' title='Web UI for Jenkins X, with a clear goal - visualize the pipelines - and their logs.'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jx-pipelines-visualizer </a></td>
 	      <td>1.1.11</td>
-	      <td><a href='https://dashboard-jx.staging.twy.gmbh'>view</a></td>
+	      <td><a href='https://dashboard.staging.twy.gmbh'>view</a></td>
 	      <td><a href='https://github.com/jenkins-x/jx-pipelines-visualizer'>source</a></td>
 	    </tr>
     <tr>
