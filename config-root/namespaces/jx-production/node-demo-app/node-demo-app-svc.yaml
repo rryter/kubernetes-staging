@@ -4,7 +4,7 @@ kind: Service
 metadata:
   name: node-demo-app
   labels:
-    chart: "node-demo-app-0.0.2"
+    chart: "node-demo-app-0.0.3"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx-production
 spec:

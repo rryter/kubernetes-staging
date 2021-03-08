@@ -1,0 +1,49 @@
+# Source: node-demo-app/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2021-03-08T10:34:12Z"
+  deletionTimestamp: null
+  name: 'node-demo-app-0.0.3'
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: release 0.0.3
+      sha: 15f95a8b74577647f33ee9cfeccce3f876e5e6c5
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: add variables
+      sha: baef862055af917d9baf161384c2b0b3e6b23377
+    - author:
+        email: reto@twy.gmbh
+        name: Reto Ryter
+      branch: master
+      committer:
+        email: reto@twy.gmbh
+        name: Reto Ryter
+      message: |
+        chore(content): update content
+      sha: ca82ad94c6b3247eb41bc1d76ff87018056b85a3
+  gitHttpUrl: https://github.com/twygmbh/node-demo-app
+  gitOwner: twygmbh
+  gitRepository: node-demo-app
+  name: 'node-demo-app'
+  releaseNotesURL: https://github.com/twygmbh/node-demo-app/releases/tag/v0.0.3
+  version: v0.0.3
+status: {}
