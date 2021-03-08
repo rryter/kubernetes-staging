@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: twygmbh
+    provider: github
+    repository: kubernetes-production
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: twygmbh-kubernetes-production
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/twygmbh/kubernetes-production.git
+  org: twygmbh
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: kubernetes-production
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/twygmbh/kubernetes-production
