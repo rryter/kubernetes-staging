@@ -18,5 +18,7 @@ releases:
   version: 0.0.2
   name: node-demo-app
   namespace: jx-production
+  values:
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}
