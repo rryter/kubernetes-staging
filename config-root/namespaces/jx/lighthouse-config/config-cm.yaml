@@ -7,6 +7,7 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        twygmbh/kubernetes-production: true
         twygmbh/kubernetes-staging: true
     plank: {}
     pod_namespace: jx
@@ -19,6 +20,7 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        twygmbh/kubernetes-production: merge
         twygmbh/kubernetes-staging: merge
       queries:
       - labels:
@@ -31,6 +33,7 @@ data:
         - needs-rebase
         repos:
         - twygmbh/kubernetes-staging
+        - twygmbh/kubernetes-production
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +44,7 @@ data:
         - needs-rebase
         repos:
         - twygmbh/kubernetes-staging
+        - twygmbh/kubernetes-production
       target_url: http://dashboard.staging.twy.gmbh
 kind: ConfigMap
 metadata:
