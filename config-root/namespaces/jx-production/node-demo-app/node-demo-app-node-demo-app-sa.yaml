@@ -1,0 +1,8 @@
+# Source: node-demo-app/templates/sa.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: node-demo-app-node-demo-app
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
