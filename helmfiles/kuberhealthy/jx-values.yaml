@@ -42,7 +42,7 @@ jxRequirements:
     gitServer: https://github.com
     key: production
     owner: twygmbh
-    promotionStrategy: Auto
+    promotionStrategy: Manual
     remoteCluster: true
     repository: kubernetes-production
   ingress:
