@@ -9,8 +9,12 @@ metadata:
   name: "production"
   namespace: jx
 spec:
+  source:
+    ref: "master"
+    url: https://github.com/twygmbh/kubernetes-production.git
   kind: Permanent
   label: Production
   order: 500
-  promotionStrategy: "Manual"
+  promotionStrategy: "Auto"
   namespace: "jx-production"
+  remoteCluster: true
