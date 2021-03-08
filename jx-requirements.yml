@@ -24,10 +24,9 @@ spec:
     owner: twygmbh
     repository: kubernetes-staging
   - key: staging
-  - key: production
   - gitKind: github
     gitServer: https://github.com
-    key: kubernetes-production
+    key: production
     owner: twygmbh
     promotionStrategy: Auto
     remoteCluster: true
