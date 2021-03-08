@@ -25,6 +25,13 @@ spec:
     repository: kubernetes-staging
   - key: staging
   - key: production
+  - gitKind: github
+    gitServer: https://github.com
+    key: kubernetes-production
+    owner: twygmbh
+    promotionStrategy: Auto
+    remoteCluster: true
+    repository: kubernetes-production
   ingress:
     domain: staging.twy.gmbh
     externalDNS: true
