@@ -1,0 +1,48 @@
+# Source: node-demo-app/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2021-03-08T18:33:31Z"
+  deletionTimestamp: null
+  name: 'node-demo-app-0.0.4'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: release 0.0.4
+      sha: 2ab91ca4c5ec5d35beb7f5ca5a30d55f3bd535e1
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: add variables
+      sha: 7c2166878b950d85615193e37371143a195e312e
+    - author:
+        email: reto@twy.gmbh
+        name: Reto Ryter
+      branch: master
+      committer:
+        email: noreply@github.com
+        name: GitHub
+      message: Update README.md
+      sha: 727886a8597beb1cd968b39ac3a2c524faa7805e
+  gitHttpUrl: https://github.com/twygmbh/node-demo-app
+  gitOwner: twygmbh
+  gitRepository: node-demo-app
+  name: 'node-demo-app'
+  releaseNotesURL: https://github.com/twygmbh/node-demo-app/releases/tag/v0.0.4
+  version: v0.0.4
+status: {}
