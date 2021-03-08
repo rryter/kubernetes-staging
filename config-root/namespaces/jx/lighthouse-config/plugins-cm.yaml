@@ -12,6 +12,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - twygmbh/k8s-node-example-app
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - twygmbh/kubernetes-production
       require_self_approval: true
     cat: {}
@@ -28,6 +32,22 @@ data:
       additional_labels: null
     owners: {}
     plugins:
+      twygmbh/k8s-node-example-app:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       twygmbh/kubernetes-production:
       - approve
       - assign
@@ -75,6 +95,9 @@ data:
       trusted_org: todo
     - repos:
       - twygmbh/kubernetes-production
+      trusted_org: todo
+    - repos:
+      - twygmbh/k8s-node-example-app
       trusted_org: todo
     - repos:
       - twygmbh/kubernetes-production

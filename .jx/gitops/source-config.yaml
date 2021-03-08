@@ -8,6 +8,7 @@ spec:
     provider: https://github.com
     providerKind: github
     repositories:
+    - name: k8s-node-example-app
     - name: kubernetes-production
     scheduler: in-repo
   slack:
